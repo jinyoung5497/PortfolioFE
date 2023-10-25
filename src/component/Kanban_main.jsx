@@ -12,12 +12,12 @@ import {
 export default function Kanban_main() {
   return (
     <>
-      <div className='h-screen flex mb-10'>
-        <div className='bg-blue-400 w-1/3 h-full self-start p-10 rounded-lg border-[1px] border-black'>
-          <h1 className='font-bold w-96 text-white text-6xl mb-7'>
+      <div className='h-screen w-full flex mb-10'>
+        <div className='bg-blue-400 w-[70rem] h-full self-start p-5 rounded-lg border-[1px] border-black'>
+          <h1 className='font-bold text-white text-4xl text-left mb-7'>
             Kanban Task Management App
           </h1>
-          <div className='flex flex-wrap gap-2 mb-7'>
+          <div className='flex flex-wrap gap-2 mb-4'>
             <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px]'>
               Mern Stack
             </div>
@@ -34,7 +34,7 @@ export default function Kanban_main() {
               Tailwind CSS
             </div>
           </div>
-          <div className='flex items-center justify-center gap-10 3xs:gap-5 mb-7'>
+          <div className='flex items-center justify-center gap-10 3xs:gap-5 mb-4'>
             <a
               href='https://kanban-task-management-4jes1jbc9-jinyoung5497.vercel.app/'
               className='h-12 rounded-lg p-4 flex items-center bg-gray hover:bg-slate-400 w-32 font-medium border-[1px] justify-center self-center'
@@ -75,9 +75,12 @@ export default function Kanban_main() {
             <img
               src={kanban_002}
               alt='kanban_002'
-              className='drop-shadow-lg border-[1px] border-black rounded-md'
+              className='drop-shadow-lg border-[1px] border-black rounded-md w-[100rem]'
             />
-            <section className='flex items-center justify-center gap-10 p-10'>
+            <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] w-fit justify-self-center'>
+              Main screen
+            </div>
+            <section className='flex items-center justify-center gap-10'>
               <div className='flex flex-col items-center justify-center gap-3'>
                 <img
                   src={kanban_003}
@@ -98,6 +101,8 @@ export default function Kanban_main() {
                   Add new tasks
                 </div>
               </div>
+            </section>
+            <section className='flex items-center justify-center gap-10'>
               <div className='flex flex-col items-center justify-center gap-3'>
                 <img
                   src={kanban_005}
@@ -108,8 +113,6 @@ export default function Kanban_main() {
                   Edit Board
                 </div>
               </div>
-            </section>
-            <section className='flex items-center justify-center gap-10 p-10'>
               <div className='flex flex-col items-center justify-center gap-3'>
                 <img
                   src={kanban_006}
@@ -120,6 +123,8 @@ export default function Kanban_main() {
                   Update tasks
                 </div>
               </div>
+            </section>
+            <section className='flex items-center justify-center gap-10'>
               <div className='flex flex-col items-center justify-center gap-3'>
                 <img
                   src={kanban_007}

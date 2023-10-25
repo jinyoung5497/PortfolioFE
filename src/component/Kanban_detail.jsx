@@ -16,7 +16,7 @@ export default function Kanban_detail() {
   return (
     <>
       <div className=' w-full flex'>
-        <div className='bg-blue-400 w-1/3 h-full self-start p-10 rounded-lg'>
+        <div className='bg-blue-400 w-1/3 h-full self-start p-10 rounded-lg border-[1px] border-black'>
           <h1 className='font-bold text-white text-6xl mb-7'>Reflection</h1>
           <div className='bg-gray p-4 rounded-md border-[1px] border-black mb-7'>
             <p className='font-bold text-lg mb-2'>Learning outcome:</p>
@@ -46,11 +46,6 @@ export default function Kanban_detail() {
           href='https://kanban-task-management-4jes1jbc9-jinyoung5497.vercel.app/'
           className='p-10'
         >
-          <img
-            src={kanban_002}
-            alt='kanban_002'
-            className='drop-shadow-lg border-[1px] border-black rounded-md'
-          />
           <section className='flex items-center justify-center gap-10 p-10'>
             <div className='flex flex-col items-center justify-center gap-3'>
               <img
@@ -72,17 +67,17 @@ export default function Kanban_detail() {
                 Getting data from the server
               </div>
             </div>
-            <div className='flex flex-col items-center justify-center gap-3'>
-              <img
-                src={kanban_010}
-                alt='kanban_010'
-                className=' drop-shadow-xl border-[1px] border-black rounded-xl'
-              />
-              <div className='text-center bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] w-fit justify-self-center'>
-                useContext hook to communicate between components
-              </div>
-            </div>
           </section>
+          <div className='flex flex-col items-center justify-center gap-3'>
+            <img
+              src={kanban_010}
+              alt='kanban_010'
+              className=' drop-shadow-xl border-[1px] border-black rounded-xl'
+            />
+            <div className='text-center bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] w-fit justify-self-center'>
+              useContext hook to communicate between components
+            </div>
+          </div>
         </a>
       </div>
     </>

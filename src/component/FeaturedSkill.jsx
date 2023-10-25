@@ -90,7 +90,7 @@ export default function FeaturedSkill() {
             alt='multi_step_001'
             className='rounded-xl h-4/5 2xs:rounded-lg mb-7'
           />
-          <div className='flex flex-wrap gap-2'>
+          <div className='flex flex-wrap gap-2 items-center justify-start'>
             <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] text-sm'>
               React
             </div>

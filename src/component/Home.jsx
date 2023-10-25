@@ -8,6 +8,8 @@ import { FeaturedSkill, Footer } from '.'
 /**
  * responsive
  * Home extended card?
+ * home shopping
+ * space website
  */
 
 export default function Home() {
