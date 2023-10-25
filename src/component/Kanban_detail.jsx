@@ -17,9 +17,7 @@ export default function Kanban_detail() {
     <>
       <div className=' w-full flex'>
         <div className='bg-blue-400 w-1/3 h-full self-start p-10 rounded-lg'>
-          <h1 className='font-bold text-white text-6xl mb-7'>
-            Kanban Task Management App
-          </h1>
+          <h1 className='font-bold text-white text-6xl mb-7'>Reflection</h1>
           <div className='bg-gray p-4 rounded-md border-[1px] border-black mb-7'>
             <p className='font-bold text-lg mb-2'>Learning outcome:</p>
             <ul className='leading-8 list-disc ml-5 4xs:leading-7 4xs:text-md'>

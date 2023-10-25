@@ -14,7 +14,7 @@ export default function Kanban_main() {
     <>
       <div className='h-screen flex mb-10'>
         <div className='bg-blue-400 w-1/3 h-full self-start p-10 rounded-lg border-[1px] border-black'>
-          <h1 className='font-bold text-white text-6xl mb-7'>
+          <h1 className='font-bold w-96 text-white text-6xl mb-7'>
             Kanban Task Management App
           </h1>
           <div className='flex flex-wrap gap-2 mb-7'>

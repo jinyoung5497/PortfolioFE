@@ -6,11 +6,8 @@ import { hoverTrue } from '../slices/pageSlice'
 import { FeaturedSkill, Footer } from '.'
 
 /**
- * Home recent work 3 of them
- * IFB398, IFB200, new game
- * Animations, Game prototypes
- * kor version
- *
+ * responsive
+ * Home extended card?
  */
 
 export default function Home() {

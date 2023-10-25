@@ -7,7 +7,7 @@ export default function Kanban_detail() {
       <div className=' w-full flex'>
         <div className='bg-indigo-600 w-1/3 h-full self-start p-10 rounded-lg border-[1px] border-black'>
           <h1 className='font-bold w-96 text-white text-6xl mb-7'>
-            Multi Step Form
+            Reflection
           </h1>
           <div className='bg-gray p-4 rounded-md border-[1px] border-black mb-7'>
             <p className='font-bold text-lg mb-2'>Learning outcome:</p>

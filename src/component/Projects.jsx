@@ -15,13 +15,6 @@ export default function Projects() {
     window.scrollTo({ top: 0 })
   }
 
-  const setModelling = () => {
-    dispatch(modelling())
-  }
-  const setFrontend = () => {
-    dispatch(frontend())
-  }
-
   return (
     <>
       <Navbar />
@@ -43,43 +36,88 @@ export default function Projects() {
           <div className='grid grid-cols-3 gap-10 mx-24 lg:mx-10 ml:mx-0 m:grid-cols-2 xs:gap-5 2xs:gap-2 4xs:flex 4xs:flex-col'>
             <div
               onClick={() => openProject(1, 'Kanban Task Management App')}
-              className='rounded-xl flex flex-col items-center justify-center cursor-pointer'
+              className='bg-blue-400 p-4 rounded-xl flex flex-col items-center justify-center cursor-pointer border-[1px] border-black'
             >
+              <div className='text-white h-1/5 flex items-center justify-center text-lg font-semibold 2xs:text-md text-center mb-5'>
+                Kanban Task Management App
+              </div>
               <img
                 src={kanban_001}
                 alt='kanban_001'
-                className='drop-shadow-[0_15px_15px_rgba(0,0,0,0.25)] rounded-xl h-4/5 2xs:rounded-lg'
+                className='rounded-xl h-4/5 2xs:rounded-lg mb-7'
               />
-              <div className='h-1/5 flex items-center justify-center text-lg font-semibold 2xs:text-md text-center 2xl:mt-4'>
-                Kanban Task Management App
+              <div className='flex flex-wrap gap-2'>
+                <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] text-sm'>
+                  Mern Stack
+                </div>
+                <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] text-sm'>
+                  React
+                </div>
+                <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] text-sm'>
+                  MongoDB
+                </div>
+                <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] text-sm'>
+                  Express js
+                </div>
+                <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] text-sm'>
+                  Tailwind CSS
+                </div>
               </div>
             </div>
 
             <div
               onClick={() => openProject(2, 'Connect Four Game')}
-              className='rounded-xl flex flex-col items-center justify-center cursor-pointer'
+              className='bg-purple-600 p-4 rounded-xl flex flex-col items-center justify-center cursor-pointer border-[1px] border-black'
             >
+              <div className='text-white h-1/5 flex items-center justify-center text-lg font-semibold 2xs:text-md text-center mb-5'>
+                Connect Four Game
+              </div>
               <img
                 src={connect_001}
                 alt='connect_001'
-                className='drop-shadow-[0_15px_15px_rgba(0,0,0,0.25)] rounded-xl h-4/5 2xs:rounded-lg'
+                className='rounded-xl h-4/5 2xs:rounded-lg mb-7'
               />
-              <div className='h-1/5 flex items-center justify-center text-lg font-semibold 2xs:text-md'>
-                Connect Four Game
+              <div className='flex flex-wrap gap-2'>
+                <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] text-sm'>
+                  React
+                </div>
+                <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] text-sm'>
+                  TypeScript
+                </div>
+                <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] text-sm'>
+                  React Redux
+                </div>
+                <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] text-sm'>
+                  Tailwind CSS
+                </div>
               </div>
             </div>
 
             <div
               onClick={() => openProject(3, 'Multi Step Form')}
-              className='rounded-xl flex flex-col items-center justify-center cursor-pointer'
+              className='bg-indigo-600 p-4 rounded-xl flex flex-col items-center justify-center cursor-pointer border-[1px] border-black'
             >
+              <div className='text-white h-1/5 flex items-center justify-center text-lg font-semibold 2xs:text-md text-center mb-5'>
+                Multi Step Form
+              </div>
               <img
                 src={multi_step_001}
                 alt='multi_step_001'
-                className='drop-shadow-[0_15px_15px_rgba(0,0,0,0.25)] rounded-xl h-4/5 2xs:rounded-lg'
+                className='rounded-xl h-4/5 2xs:rounded-lg mb-7'
               />
-              <div className='h-1/5 flex items-center justify-center text-lg font-semibold 2xs:text-md'>
-                Multi Step Form
+              <div className='flex flex-wrap gap-2'>
+                <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] text-sm'>
+                  React
+                </div>
+                <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] text-sm'>
+                  React Router Dom
+                </div>
+                <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] text-sm'>
+                  useContext React Hook
+                </div>
+                <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] text-sm'>
+                  Tailwind CSS
+                </div>
               </div>
             </div>
           </div>
