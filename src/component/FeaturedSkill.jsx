@@ -18,7 +18,7 @@ export default function FeaturedSkill() {
   }
   return (
     <>
-      <div className='grid grid-cols-3 gap-10 mx-24 lg:mx-10 ml:mx-0 m:grid-cols-2 xs:gap-5 2xs:gap-2 4xs:flex 4xs:flex-col'>
+      <div className='grid grid-cols-3 gap-10 mx-0 lg:mx-10 ml:mx-0 lg:grid-cols-2 xs:gap-5 2xs:gap-2 3xs:flex 3xs:flex-col'>
         <div
           onClick={() => openProject(1, 'Kanban Task Management App')}
           className='bg-blue-400 p-4 rounded-xl flex flex-col items-center justify-center cursor-pointer border-[1px] border-black'

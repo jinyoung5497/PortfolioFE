@@ -6,7 +6,6 @@ import { hoverTrue } from '../slices/pageSlice'
 import { FeaturedSkill, Footer } from '.'
 
 /**
- * responsive
  * Home extended card?
  * home shopping
  * space website

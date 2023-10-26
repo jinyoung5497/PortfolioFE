@@ -15,9 +15,9 @@ import {
 export default function Kanban_detail() {
   return (
     <>
-      <div className=' w-full flex'>
-        <div className='bg-blue-400 w-1/3 h-full self-start p-10 rounded-lg border-[1px] border-black'>
-          <h1 className='font-bold text-white text-6xl mb-7'>Reflection</h1>
+      <div className=' w-full flex m:flex-col'>
+        <div className='bg-blue-400 w-1/3 lg:w-[30rem] m:w-full h-full self-start p-10 m:p-4 rounded-lg border-[1px] border-black'>
+          <h1 className='font-bold text-white text-5xl mb-7'>Reflection</h1>
           <div className='bg-gray p-4 rounded-md border-[1px] border-black mb-7'>
             <p className='font-bold text-lg mb-2'>Learning outcome:</p>
             <ul className='leading-8 list-disc ml-5 4xs:leading-7 4xs:text-md'>
@@ -43,17 +43,17 @@ export default function Kanban_detail() {
           </div>
         </div>
         <a
-          href='https://kanban-task-management-4jes1jbc9-jinyoung5497.vercel.app/'
-          className='p-10'
+          href='https://github.com/jinyoung5497/Kanban-Task-Management'
+          className='p-10 m:p-0'
         >
-          <section className='flex items-center justify-center gap-10 p-10'>
+          <section className='flex items-center justify-center gap-10 p-10 lg:flex-col'>
             <div className='flex flex-col items-center justify-center gap-3'>
               <img
                 src={kanban_008}
                 alt='kanban_008'
                 className=' drop-shadow-xl border-[1px] border-black rounded-xl'
               />
-              <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] w-fit justify-self-center'>
+              <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] w-fit justify-self-center 4xs:text-sm'>
                 Setting server routes using express
               </div>
             </div>
@@ -63,7 +63,7 @@ export default function Kanban_detail() {
                 alt='kanban_009'
                 className=' drop-shadow-xl border-[1px] border-black rounded-xl'
               />
-              <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] w-fit justify-self-center'>
+              <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] w-fit justify-self-center 4xs:text-sm'>
                 Getting data from the server
               </div>
             </div>
@@ -74,7 +74,7 @@ export default function Kanban_detail() {
               alt='kanban_010'
               className=' drop-shadow-xl border-[1px] border-black rounded-xl'
             />
-            <div className='text-center bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] w-fit justify-self-center'>
+            <div className='text-center bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] w-fit justify-self-center 4xs:text-sm'>
               useContext hook to communicate between components
             </div>
           </div>

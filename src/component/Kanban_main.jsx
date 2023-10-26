@@ -12,8 +12,8 @@ import {
 export default function Kanban_main() {
   return (
     <>
-      <div className='h-screen w-full flex mb-10'>
-        <div className='bg-blue-400 w-[70rem] h-full self-start p-5 rounded-lg border-[1px] border-black'>
+      <div className='h-screen lg:h-full w-full flex mb-10 md:flex-col '>
+        <div className='bg-blue-400 w-[70rem] xl:w-[60rem] lg:w-[50rem] m:w-full h-full p-5 rounded-lg border-[1px] border-black'>
           <h1 className='font-bold text-white text-4xl text-left mb-7'>
             Kanban Task Management App
           </h1>
@@ -69,23 +69,23 @@ export default function Kanban_main() {
         </div>
         <a
           href='https://kanban-task-management-4jes1jbc9-jinyoung5497.vercel.app/'
-          className='p-10 overflow-y-scroll'
+          className='p-10 m:py-5 m:px-0 overflow-y-scroll'
         >
-          <div className='grid grid-cols-1 items-center justify-center gap-10'>
+          <div className='grid grid-cols-1 items-center justify-center gap-10 m:gap-4'>
             <img
               src={kanban_002}
               alt='kanban_002'
-              className='drop-shadow-lg border-[1px] border-black rounded-md w-[100rem]'
+              className='drop-shadow-lg border-[1px] border-black rounded-md w-[100rem] xl:w-[80rem] m:w-full'
             />
             <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] w-fit justify-self-center'>
               Main screen
             </div>
-            <section className='flex items-center justify-center gap-10'>
+            <section className='flex items-center justify-center gap-10 lg:flex-col'>
               <div className='flex flex-col items-center justify-center gap-3'>
                 <img
                   src={kanban_003}
                   alt='kanban_003'
-                  className='h-96 drop-shadow-xl border-[1px] border-black rounded-xl'
+                  className='h-96 drop-shadow-xl border-[1px] border-black rounded-xl w-fit  m:w-full'
                 />
                 <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] w-fit justify-self-center'>
                   Add new board
@@ -95,19 +95,19 @@ export default function Kanban_main() {
                 <img
                   src={kanban_004}
                   alt='kanban_004'
-                  className='h-96 drop-shadow-xl border-[1px] border-black rounded-xl'
+                  className='h-96 drop-shadow-xl border-[1px] border-black rounded-xl w-fit  m:w-full'
                 />
                 <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] w-fit justify-self-center'>
                   Add new tasks
                 </div>
               </div>
             </section>
-            <section className='flex items-center justify-center gap-10'>
+            <section className='flex items-center justify-center gap-10 lg:flex-col'>
               <div className='flex flex-col items-center justify-center gap-3'>
                 <img
                   src={kanban_005}
                   alt='kanban_005'
-                  className='h-96 drop-shadow-xl border-[1px] border-black rounded-xl'
+                  className='h-96 drop-shadow-xl border-[1px] border-black rounded-xl w-fit  m:w-full'
                 />
                 <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] w-fit justify-self-center'>
                   Edit Board
@@ -117,7 +117,7 @@ export default function Kanban_main() {
                 <img
                   src={kanban_006}
                   alt='kanban_006'
-                  className='h-96 drop-shadow-xl border-[1px] border-black rounded-xl'
+                  className='h-96 drop-shadow-xl border-[1px] border-black rounded-xl w-fit  m:w-full'
                 />
                 <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] w-fit justify-self-center'>
                   Update tasks
@@ -129,7 +129,7 @@ export default function Kanban_main() {
                 <img
                   src={kanban_007}
                   alt='kanban_007'
-                  className='h-96 drop-shadow-xl border-[1px] border-black rounded-xl'
+                  className='h-96 drop-shadow-xl border-[1px] border-black rounded-xl w-fit  m:w-full'
                 />
                 <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] w-fit justify-self-center'>
                   Delete board

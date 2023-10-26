@@ -11,17 +11,17 @@ import {
 export default function Connect_four_main() {
   return (
     <>
-      <div className='h-screen w-full flex mb-10'>
-        <div className='bg-purple-600 w-1/3 h-full self-start p-10 rounded-lg border-[1px] border-black'>
-          <h1 className='font-bold w-96 text-white text-6xl mb-7'>
-            Connect four game
+      <div className='h-screen lg:h-full w-full flex mb-10 md:flex-col md:items-center'>
+        <div className='bg-purple-600 w-[70rem] xl:w-[60rem] lg:w-[50rem] m:w-full h-full p-5 rounded-lg border-[1px] border-black'>
+          <h1 className='font-bold text-white text-4xl text-left mb-7'>
+            Connect Four Game
           </h1>
-          <div className='flex flex-wrap gap-2 mb-7'>
+          <div className='flex flex-wrap gap-2 mb-4'>
             <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px]'>
               React
             </div>
             <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px]'>
-              Typescript
+              TypeScript
             </div>
             <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px]'>
               React Redux
@@ -65,20 +65,23 @@ export default function Connect_four_main() {
         </div>
         <a
           href='https://connect-four-game-m1ctxyhbg-jinyoung5497.vercel.app/'
-          className='p-10 overflow-y-scroll'
+          className='p-10 m:py-5 m:px-0 overflow-y-scroll'
         >
-          <div className='grid grid-cols-1 items-center justify-center '>
+          <div className='grid grid-cols-1 items-center justify-center gap-10 m:gap-4'>
             <img
               src={connect_001}
               alt='connect_001'
-              className='drop-shadow-lg border-[1px] border-black rounded-md'
+              className='drop-shadow-lg border-[1px] border-black rounded-md w-[100rem] xl:w-[80rem] m:w-full'
             />
-            <section className='flex items-center justify-center gap-10 p-10'>
+            <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] w-fit justify-self-center'>
+              Main screen
+            </div>
+            <section className='flex items-center justify-center gap-10 lg:flex-col'>
               <div className='flex flex-col items-center justify-center gap-3'>
                 <img
                   src={connect_002}
                   alt='connect_002'
-                  className='h-96 drop-shadow-xl border-[1px] border-black rounded-xl'
+                  className='h-96 drop-shadow-xl border-[1px] border-black rounded-xl w-fit  m:w-full'
                 />
                 <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] w-fit justify-self-center'>
                   Main menu
@@ -88,19 +91,19 @@ export default function Connect_four_main() {
                 <img
                   src={connect_003}
                   alt='connect_003'
-                  className='h-96 drop-shadow-xl border-[1px] border-black rounded-xl'
+                  className='h-96 drop-shadow-xl border-[1px] border-black rounded-xl w-fit  m:w-full'
                 />
                 <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] w-fit justify-self-center'>
-                  Game start screen
+                  Game Start screen
                 </div>
               </div>
             </section>
-            <section className='flex items-center justify-center gap-10 pb-10'>
+            <section className='flex items-center justify-center gap-10 lg:flex-col'>
               <div className='flex flex-col items-center justify-center gap-3'>
                 <img
                   src={connect_004}
                   alt='connect_004'
-                  className='h-96 drop-shadow-xl border-[1px] border-black rounded-xl'
+                  className='h-96 drop-shadow-xl border-[1px] border-black rounded-xl w-fit  m:w-full'
                 />
                 <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] w-fit justify-self-center'>
                   In game screen
@@ -110,22 +113,22 @@ export default function Connect_four_main() {
                 <img
                   src={connect_005}
                   alt='connect_005'
-                  className='h-96 drop-shadow-xl border-[1px] border-black rounded-xl'
+                  className='h-96 drop-shadow-xl border-[1px] border-black rounded-xl w-fit  m:w-full'
                 />
                 <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] w-fit justify-self-center'>
                   Pause menu
                 </div>
               </div>
             </section>
-            <section className='flex items-center justify-center gap-10 '>
+            <section className='flex items-center justify-center gap-10'>
               <div className='flex flex-col items-center justify-center gap-3'>
                 <img
                   src={connect_006}
                   alt='connect_006'
-                  className='h-96 drop-shadow-xl border-[1px] border-black rounded-xl'
+                  className='h-96 drop-shadow-xl border-[1px] border-black rounded-xl w-fit  m:w-full'
                 />
                 <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] w-fit justify-self-center'>
-                  Game rules
+                  Game Rules
                 </div>
               </div>
             </section>
