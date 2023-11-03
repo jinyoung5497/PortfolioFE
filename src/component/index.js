@@ -16,6 +16,8 @@ import Connect_four_main from './Connect_four_main'
 import Connect_four_detail from './Connect_four_detail'
 import Multi_step_main from './Multi_step_main'
 import Multi_step_detail from './Multi_step_detail'
+import Ecommerce_main from './ecommerce_main'
+import Ecommerce_detail from './ecommerce_detail'
 
 export {
   Home,
@@ -36,4 +38,6 @@ export {
   Connect_four_detail,
   Multi_step_main,
   Multi_step_detail,
+  Ecommerce_main,
+  Ecommerce_detail,
 }

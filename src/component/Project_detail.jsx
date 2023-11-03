@@ -9,6 +9,8 @@ import {
   Kanban_detail,
   Connect_four_main,
   Connect_four_detail,
+  Ecommerce_main,
+  Ecommerce_detail,
 } from '.'
 
 export default function Project_detail() {
@@ -53,6 +55,12 @@ export default function Project_detail() {
           <>
             <Kanban_main />
             <Kanban_detail />
+          </>
+        )}
+        {page.projectIndex == 4 && (
+          <>
+            <Ecommerce_main />
+            <Ecommerce_detail />
           </>
         )}
         {page.projectIndex == 2 && (

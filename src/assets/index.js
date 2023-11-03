@@ -28,6 +28,16 @@ import multi_step_007 from './multi_step/step_05.png'
 import multi_step_008 from './multi_step/step_06.png'
 import multi_step_009 from './multi_step/step_07.png'
 import multi_step_010 from './multi_step/step_08.png'
+import ecommerce_001 from './ecommerce/ecommerce_001.png'
+import ecommerce_002 from './ecommerce/ecommerce_002.png'
+import ecommerce_003 from './ecommerce/ecommerce_003.png'
+import ecommerce_004 from './ecommerce/ecommerce_004.png'
+import ecommerce_005 from './ecommerce/ecommerce_005.png'
+import ecommerce_006 from './ecommerce/ecommerce_006.png'
+import ecommerce_007 from './ecommerce/ecommerce_007.png'
+import ecommerce_008 from './ecommerce/ecommerce_008.png'
+import ecommerce_009 from './ecommerce/ecommerce_009.png'
+import ecommerce_010 from './ecommerce/ecommerce_010.png'
 
 export {
   pdf,
@@ -60,4 +70,14 @@ export {
   multi_step_008,
   multi_step_009,
   multi_step_010,
+  ecommerce_001,
+  ecommerce_002,
+  ecommerce_003,
+  ecommerce_004,
+  ecommerce_005,
+  ecommerce_006,
+  ecommerce_007,
+  ecommerce_008,
+  ecommerce_009,
+  ecommerce_010,
 }

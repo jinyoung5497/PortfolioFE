@@ -1,6 +1,12 @@
 import React from 'react'
 import { Navbar, Footer, Project_detail } from '.'
-import { kanban_001, connect_001, multi_step_001 } from '../assets'
+import {
+  kanban_001,
+  connect_001,
+  multi_step_001,
+  ecommerce_010,
+  ecommerce_002,
+} from '../assets'
 import { useSelector, useDispatch } from 'react-redux'
 import { hoverFalse, projectIndex, title } from '../slices/pageSlice'
 
@@ -52,6 +58,40 @@ export default function Projects() {
                 </div>
                 <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] text-sm'>
                   React
+                </div>
+                <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] text-sm'>
+                  MongoDB
+                </div>
+                <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] text-sm'>
+                  Express js
+                </div>
+                <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] text-sm'>
+                  Tailwind CSS
+                </div>
+              </div>
+            </div>
+
+            <div
+              onClick={() => openProject(4, 'Audiophile E-commerce Website')}
+              className='bg-orange p-4 md:p-2 rounded-xl flex flex-col items-center justify-center cursor-pointer border-[1px] border-black'
+            >
+              <div className='text-white  flex items-center justify-center text-lg font-semibold 2xs:text-md text-center mb-5'>
+                Audiophile E-commerce Website
+              </div>
+              <img
+                src={ecommerce_010}
+                alt='ecommerce_010'
+                className='rounded-xl h-full w-full 2xs:rounded-lg mb-7 '
+              />
+              <div className='flex flex-wrap gap-2'>
+                <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] text-sm'>
+                  Mern Stack
+                </div>
+                <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] text-sm'>
+                  React
+                </div>
+                <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] text-sm'>
+                  TypeScript
                 </div>
                 <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] text-sm'>
                   MongoDB
