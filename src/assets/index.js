@@ -38,6 +38,9 @@ import ecommerce_007 from './ecommerce/ecommerce_007.png'
 import ecommerce_008 from './ecommerce/ecommerce_008.png'
 import ecommerce_009 from './ecommerce/ecommerce_009.png'
 import ecommerce_010 from './ecommerce/ecommerce_010.png'
+import ecommerce_011 from './ecommerce/ecommerce_011.png'
+import ecommerce_012 from './ecommerce/ecommerce_012.png'
+import ecommerce_013 from './ecommerce/ecommerce_013.png'
 
 export {
   pdf,
@@ -80,4 +83,7 @@ export {
   ecommerce_008,
   ecommerce_009,
   ecommerce_010,
+  ecommerce_011,
+  ecommerce_012,
+  ecommerce_013,
 }

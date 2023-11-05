@@ -1,16 +1,5 @@
 import React from 'react'
-import {
-  kanban_001,
-  kanban_002,
-  kanban_003,
-  kanban_004,
-  kanban_005,
-  kanban_006,
-  kanban_007,
-  kanban_008,
-  kanban_009,
-  kanban_010,
-} from '../assets'
+import { ecommerce_011, ecommerce_012, ecommerce_013 } from '../assets'
 
 export default function Ecommerce_detail() {
   return (
@@ -34,51 +23,56 @@ export default function Ecommerce_detail() {
           <div className='bg-gray p-4 rounded-md border-[1px] border-black mb-7'>
             <p className='font-bold text-lg mb-2'>What I learned:</p>
             <div className='leading-8 list-disc ml-5 4xs:leading-7 4xs:text-md'>
-              I've learned about the MERN stack workflow, which involves the
-              essential steps of setting up the server environment and
-              establishing effective communication between the backend and
-              frontend. This workflow is crucial for building web applications
-              using the MERN stack, where MongoDB, Express.js, React, and
-              Node.js play key roles. First, I've discovered the significance of
-              configuring the server environment to ensure it can handle
-              requests and manage data effectively.
+              In mastering the MERN (MongoDB, Express.js, React, Node.js) stack
+              workflow, I've gained a comprehensive understanding of developing
+              full-stack applications. Setting up the server environment
+              involved configuring each component, ensuring seamless
+              communication between the backend and frontend, and establishing a
+              solid foundation for data flow. Utilising Redux for state
+              management and implementing responsive design were crucial in
+              creating dynamic and user-friendly interfaces. Moreover, I delved
+              into tasks like calculating totals during checkout, implementing
+              form validation for data integrity, and honing the skills
+              necessary for full-stack deployment. This comprehensive knowledge
+              has equipped me with the tools to create robust, responsive, and
+              efficient applications within the MERN stack ecosystem.
             </div>
           </div>
         </div>
         <a
-          href='https://github.com/jinyoung5497/Kanban-Task-Management'
+          href='https://github.com/jinyoung5497/ecommerce-website'
           className='p-10 m:p-0'
         >
           <section className='flex items-center justify-center gap-10 p-10 lg:flex-col'>
             <div className='flex flex-col items-center justify-center gap-3'>
               <img
-                src={kanban_008}
-                alt='kanban_008'
+                src={ecommerce_011}
+                alt='ecommerce_011'
                 className=' drop-shadow-xl border-[1px] border-black rounded-xl'
               />
               <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] w-fit justify-self-center 4xs:text-sm'>
-                Setting server routes using express
+                React Redux for state management
               </div>
             </div>
             <div className='flex flex-col items-center justify-center gap-3'>
               <img
-                src={kanban_009}
-                alt='kanban_009'
+                src={ecommerce_012}
+                alt='ecommerce_012'
                 className=' drop-shadow-xl border-[1px] border-black rounded-xl'
               />
               <div className='bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] w-fit justify-self-center 4xs:text-sm'>
-                Getting data from the server
+                Server route setup
               </div>
             </div>
           </section>
           <div className='flex flex-col items-center justify-center gap-3'>
             <img
-              src={kanban_010}
-              alt='kanban_010'
+              src={ecommerce_013}
+              alt='ecommerce_013'
               className=' drop-shadow-xl border-[1px] border-black rounded-xl'
             />
             <div className='text-center bg-gray px-2 py-1 rounded-full text-black border-black border-[1px] w-fit justify-self-center 4xs:text-sm'>
-              useContext hook to communicate between components
+              Email form validation
             </div>
           </div>
         </a>
