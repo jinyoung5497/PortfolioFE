@@ -11,10 +11,49 @@ import {
   ecommerce_009,
 } from "../assets";
 import { useSelector } from "react-redux";
+import ReactImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
 
 export default function Ecommerce_main() {
   const page = useSelector((state) => state.page.value);
-
+  const images = [
+    {
+      original: ecommerce_001,
+      thumbnail: ecommerce_001,
+    },
+    {
+      original: ecommerce_002,
+      thumbnail: ecommerce_002,
+    },
+    {
+      original: ecommerce_003,
+      thumbnail: ecommerce_003,
+    },
+    {
+      original: ecommerce_004,
+      thumbnail: ecommerce_004,
+    },
+    {
+      original: ecommerce_005,
+      thumbnail: ecommerce_005,
+    },
+    {
+      original: ecommerce_006,
+      thumbnail: ecommerce_006,
+    },
+    {
+      original: ecommerce_007,
+      thumbnail: ecommerce_007,
+    },
+    {
+      original: ecommerce_008,
+      thumbnail: ecommerce_008,
+    },
+    {
+      original: ecommerce_009,
+      thumbnail: ecommerce_009,
+    },
+  ];
   return (
     <>
       <div className="h-full lg:h-full w-full flex mb-10 md:flex-col md:items-center ">
@@ -120,7 +159,7 @@ export default function Ecommerce_main() {
             </div>
           )}
         </div>
-        <a
+        {/* <a
           href="https://ecommerce-website-blush-psi.vercel.app"
           className="p-10 m:py-5 m:px-0 overflow-y-scroll h-screen"
         >
@@ -224,7 +263,15 @@ export default function Ecommerce_main() {
               </div>
             </section>
           </div>
-        </a>
+        </a> */}
+        <div className="w-full  m-5 flex items-center justify-center">
+          <ReactImageGallery
+            items={images}
+            autoPlay={true}
+            thumbnailPosition="right"
+            originalHeight="500"
+          />
+        </div>
       </div>
     </>
   );

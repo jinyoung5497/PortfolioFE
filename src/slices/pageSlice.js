@@ -5,7 +5,7 @@ const initialState = {
     hover: true,
     projectIndex: -1,
     title: "",
-    english: true,
+    english: false,
   },
 };
 

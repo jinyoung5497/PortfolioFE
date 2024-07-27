@@ -9,14 +9,42 @@ import {
   kanban_007,
 } from "../assets";
 import { useSelector } from "react-redux";
+import ReactImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
 
 export default function Kanban_main() {
   const page = useSelector((state) => state.page.value);
+  const images = [
+    {
+      original: kanban_002,
+      thumbnail: kanban_002,
+    },
+    {
+      original: kanban_003,
+      thumbnail: kanban_003,
+    },
+    {
+      original: kanban_004,
+      thumbnail: kanban_004,
+    },
+    {
+      original: kanban_005,
+      thumbnail: kanban_005,
+    },
+    {
+      original: kanban_006,
+      thumbnail: kanban_006,
+    },
+    {
+      original: kanban_007,
+      thumbnail: kanban_007,
+    },
+  ];
 
   return (
     <>
       <div className="h-screen lg:h-full w-full flex mb-10 md:flex-col ">
-        <div className="bg-blue-400 w-[600px] xl:w-[60rem] lg:w-[50rem] m:w-full h-full p-5 rounded-lg border-[1px] border-black">
+        <div className="bg-blue-400 w-[600px]  lg:w-[50rem] m:w-full h-full p-5 rounded-lg border-[1px] border-black">
           <h1 className="font-bold text-white text-4xl text-left mb-7">
             Kanban Task Management App
           </h1>
@@ -93,7 +121,7 @@ export default function Kanban_main() {
             )}
           </div>
         </div>
-        <a
+        {/* <a
           href="https://kanban-task-management-4jes1jbc9-jinyoung5497.vercel.app/"
           className="p-10 m:py-5 m:px-0 overflow-y-scroll"
         >
@@ -163,7 +191,14 @@ export default function Kanban_main() {
               </div>
             </section>
           </div>
-        </a>
+        </a> */}
+        <div className="w-full  m-5 flex items-center justify-center">
+          <ReactImageGallery
+            items={images}
+            autoPlay={true}
+            thumbnailPosition="right"
+          />
+        </div>
       </div>
     </>
   );
