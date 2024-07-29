@@ -8,11 +8,14 @@ import {
   kanban_006,
   kanban_007,
 } from "../assets";
-import { useSelector } from "react-redux";
+import { NavLink } from "react-router-dom";
 import ReactImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
+import { useSelector, useDispatch } from "react-redux";
+import { hover } from "../slices/pageSlice";
 
 export default function Kanban_main() {
+  const dispatch = useDispatch();
   const page = useSelector((state) => state.page.value);
   const images = [
     {
@@ -40,9 +43,58 @@ export default function Kanban_main() {
       thumbnail: kanban_007,
     },
   ];
+  const back = () => {
+    dispatch(hover());
+    window.scrollTo({ top: 0 });
+  };
 
   return (
     <>
+      {page.english ? (
+        <div className="flex gap-10 mb-10 2xs:gap-4">
+          <a
+            href="https://github.com/jinyoung5497/Kanban-Task-Management"
+            className="h-12 hover:bg-gradient-to-r hover:from-blue-500 hover:to-sky-500 rounded-lg flex items-center hover:text-white  font-medium border-[1px] border-sky-500 w-44 justify-center 2xs:h-10 2xs:w-40 4xs:h-8 4xs:w-32"
+          >
+            View Code
+          </a>
+          <a
+            href="https://kanban-task-management-4jes1jbc9-jinyoung5497.vercel.app/"
+            className="h-12 hover:bg-gradient-to-r hover:from-violet-500 hover:to-fuchsia-500 rounded-lg flex items-center hover:text-white  font-medium border-[1px] border-fuchsia-500 w-44 justify-center 2xs:h-10 2xs:w-40 4xs:h-8 4xs:w-32"
+          >
+            Live Link
+          </a>
+          <NavLink
+            to="/projects"
+            onClick={back}
+            className="h-12 hover:bg-gradient-to-r hover:from-blue-500 hover:to-cyan-500 rounded-lg flex items-center hover:text-white  font-medium border-[1px] border-blue-500 w-44 justify-center 2xs:h-10 2xs:w-40 4xs:h-8 4xs:w-32"
+          >
+            More Projects
+          </NavLink>
+        </div>
+      ) : (
+        <div className="flex gap-10 mb-10 2xs:gap-4">
+          <a
+            href="https://github.com/jinyoung5497/Kanban-Task-Management"
+            className="h-12 hover:bg-gradient-to-r hover:from-blue-500 hover:to-sky-500 rounded-lg flex items-center hover:text-white  font-medium border-[1px] border-sky-500 w-44 justify-center 2xs:h-10 2xs:w-40 4xs:h-8 4xs:w-32"
+          >
+            코드 보기
+          </a>
+          <a
+            href="https://kanban-task-management-4jes1jbc9-jinyoung5497.vercel.app/"
+            className="h-12 hover:bg-gradient-to-r hover:from-violet-500 hover:to-fuchsia-500 rounded-lg flex items-center hover:text-white  font-medium border-[1px] border-fuchsia-500 w-44 justify-center 2xs:h-10 2xs:w-40 4xs:h-8 4xs:w-32"
+          >
+            라이브 링크
+          </a>
+          <NavLink
+            to="/projects"
+            onClick={back}
+            className="h-12 hover:bg-gradient-to-r hover:from-blue-500 hover:to-cyan-500 rounded-lg flex items-center hover:text-white  font-medium border-[1px] border-blue-500 w-44 justify-center 2xs:h-10 2xs:w-40 4xs:h-8 4xs:w-32"
+          >
+            프로젝트 더보기
+          </NavLink>
+        </div>
+      )}
       <div className="h-screen lg:h-full w-full flex mb-10 md:flex-col ">
         <div className="bg-blue-400 w-[600px]  lg:w-[50rem] m:w-full h-full p-5 rounded-lg border-[1px] border-black">
           <h1 className="font-bold text-white text-4xl text-left mb-7">
@@ -65,20 +117,7 @@ export default function Kanban_main() {
               Tailwind CSS
             </div>
           </div>
-          <div className="flex items-center justify-center gap-10 3xs:gap-5 mb-4">
-            <a
-              href="https://kanban-task-management-4jes1jbc9-jinyoung5497.vercel.app/"
-              className="h-12 rounded-lg p-4 flex items-center bg-gray hover:bg-slate-400 w-32 font-medium border-[1px] justify-center self-center"
-            >
-              Live Link
-            </a>
-            <a
-              href="https://github.com/jinyoung5497/Kanban-Task-Management"
-              className="h-12  rounded-lg p-5 flex items-center bg-gray hover:bg-slate-400 w-32 font-medium border-[1px] justify-center self-center"
-            >
-              View code
-            </a>
-          </div>
+
           <div className="bg-gray p-4 rounded-md border-[1px] border-black mb-7">
             {page.english ? (
               <p className="font-bold text-lg mb-2">Users should be able to:</p>

@@ -7,15 +7,95 @@ import {
   connect_005,
   connect_006,
 } from "../assets";
-import { useSelector } from "react-redux";
+import { NavLink } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+import ReactImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
+import { hover } from "../slices/pageSlice";
 
 export default function Connect_four_main() {
+  const dispatch = useDispatch();
   const page = useSelector((state) => state.page.value);
+  const images = [
+    {
+      original: connect_001,
+      thumbnail: connect_001,
+    },
+    {
+      original: connect_002,
+      thumbnail: connect_002,
+    },
+    {
+      original: connect_003,
+      thumbnail: connect_003,
+    },
+    {
+      original: connect_004,
+      thumbnail: connect_004,
+    },
+    {
+      original: connect_005,
+      thumbnail: connect_005,
+    },
+    {
+      original: connect_006,
+      thumbnail: connect_006,
+    },
+  ];
+  const back = () => {
+    dispatch(hover());
+    window.scrollTo({ top: 0 });
+  };
 
   return (
     <>
+      {page.english ? (
+        <div className="flex gap-10 mb-10 2xs:gap-4">
+          <a
+            href="https://github.com/jinyoung5497/connect-four-game"
+            className="h-12 hover:bg-gradient-to-r hover:from-blue-500 hover:to-sky-500 rounded-lg flex items-center hover:text-white  font-medium border-[1px] border-sky-500 w-44 justify-center 2xs:h-10 2xs:w-40 4xs:h-8 4xs:w-32"
+          >
+            View Code
+          </a>
+          <a
+            href="https://connect-four-game-m1ctxyhbg-jinyoung5497.vercel.app/"
+            className="h-12 hover:bg-gradient-to-r hover:from-violet-500 hover:to-fuchsia-500 rounded-lg flex items-center hover:text-white  font-medium border-[1px] border-fuchsia-500 w-44 justify-center 2xs:h-10 2xs:w-40 4xs:h-8 4xs:w-32"
+          >
+            Live Link
+          </a>
+          <NavLink
+            to="/projects"
+            onClick={back}
+            className="h-12 hover:bg-gradient-to-r hover:from-blue-500 hover:to-cyan-500 rounded-lg flex items-center hover:text-white  font-medium border-[1px] border-blue-500 w-44 justify-center 2xs:h-10 2xs:w-40 4xs:h-8 4xs:w-32"
+          >
+            More Projects
+          </NavLink>
+        </div>
+      ) : (
+        <div className="flex gap-10 mb-10 2xs:gap-4">
+          <a
+            href="https://github.com/jinyoung5497/connect-four-game"
+            className="h-12 hover:bg-gradient-to-r hover:from-blue-500 hover:to-sky-500 rounded-lg flex items-center hover:text-white  font-medium border-[1px] border-sky-500 w-44 justify-center 2xs:h-10 2xs:w-40 4xs:h-8 4xs:w-32"
+          >
+            코드 보기
+          </a>
+          <a
+            href="https://connect-four-game-m1ctxyhbg-jinyoung5497.vercel.app/"
+            className="h-12 hover:bg-gradient-to-r hover:from-violet-500 hover:to-fuchsia-500 rounded-lg flex items-center hover:text-white  font-medium border-[1px] border-fuchsia-500 w-44 justify-center 2xs:h-10 2xs:w-40 4xs:h-8 4xs:w-32"
+          >
+            라이브 링크
+          </a>
+          <NavLink
+            to="/projects"
+            onClick={back}
+            className="h-12 hover:bg-gradient-to-r hover:from-blue-500 hover:to-cyan-500 rounded-lg flex items-center hover:text-white  font-medium border-[1px] border-blue-500 w-44 justify-center 2xs:h-10 2xs:w-40 4xs:h-8 4xs:w-32"
+          >
+            프로젝트 더보기
+          </NavLink>
+        </div>
+      )}
       <div className="h-screen lg:h-full w-full flex mb-10 md:flex-col md:items-center">
-        <div className="bg-purple-600 w-[70rem] xl:w-[60rem] lg:w-[50rem] m:w-full h-full p-5 rounded-lg border-[1px] border-black">
+        <div className="bg-purple-600 w-[50rem] m:w-full h-full p-5 rounded-lg border-[1px] border-black">
           <h1 className="font-bold text-white text-4xl text-left mb-7">
             Connect Four Game
           </h1>
@@ -32,20 +112,6 @@ export default function Connect_four_main() {
             <div className="bg-gray px-2 py-1 rounded-full text-black border-black border-[1px]">
               Tailwind CSS
             </div>
-          </div>
-          <div className="flex items-center justify-center gap-10 3xs:gap-5 mb-7">
-            <a
-              href="https://connect-four-game-m1ctxyhbg-jinyoung5497.vercel.app/"
-              className="h-12 rounded-lg p-4 flex items-center bg-gray hover:bg-slate-400 w-32 font-medium border-[1px] justify-center self-center"
-            >
-              Live Link
-            </a>
-            <a
-              href="https://github.com/jinyoung5497/connect-four-game"
-              className="h-12  rounded-lg p-5 flex items-center bg-gray hover:bg-slate-400 w-32 font-medium border-[1px] justify-center self-center"
-            >
-              View code
-            </a>
           </div>
           {page.english ? (
             <div className="bg-gray p-4 rounded-md border-[1px] border-black mb-7">
@@ -86,7 +152,7 @@ export default function Connect_four_main() {
             </div>
           )}
         </div>
-        <a
+        {/* <a
           href="https://connect-four-game-m1ctxyhbg-jinyoung5497.vercel.app/"
           className="p-10 m:py-5 m:px-0 overflow-y-scroll"
         >
@@ -156,7 +222,14 @@ export default function Connect_four_main() {
               </div>
             </section>
           </div>
-        </a>
+        </a> */}
+        <div className="w-full  m-5 flex items-center justify-center">
+          <ReactImageGallery
+            items={images}
+            autoPlay={true}
+            thumbnailPosition="right"
+          />
+        </div>
       </div>
     </>
   );
